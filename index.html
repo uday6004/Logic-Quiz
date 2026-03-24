@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Quiz | JavaScript Project</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background: #121212; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        #quiz-container { background: #1e1e1e; padding: 30px; border-radius: 12px; width: 400px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; }
+        .option-btn { display: block; width: 100%; padding: 12px; margin: 10px 0; border: none; border-radius: 6px; background: #333; color: white; cursor: pointer; transition: 0.3s; }
+        .option-btn:hover { background: #444; }
+        #next-btn { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; display: none; margin-top: 20px; width: 100%; }
+        .score-screen { font-size: 24px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <div id="question-area">
+        <h2 id="question-text">Loading Question...</h2>
+        <div id="options-container"></div>
+    </div>
+    <button id="next-btn">Next Question</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
